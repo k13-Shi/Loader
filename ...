@@ -127,14 +127,8 @@ local function closeUI()
 end
 
 local mainButton = createButton("Execute Main Script", UDim2.new(0, 20, 0, 50), Frame)
-local farmingButton = createButton("Execute Farming Script", UDim2.new(0, 20, 0, 115), Frame)
 
 mainButton.MouseButton1Click:Connect(function()
     closeUI()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SaixLyn/K13-Main/refs/heads/main/K13Main.Lua",true))()
-end)
-
-farmingButton.MouseButton1Click:Connect(function()
-    closeUI()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SaixLyn/K13-Farming/refs/heads/main/Packs",true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/k13-Shi/Main/refs/heads/main/...",true))()
 end)
